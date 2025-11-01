@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+/*
+------------------------------------------------------------
+Projeto: Movimentando as Peças do Xadrez
+Autor: [Seu Nome]
+Descrição:
+  Este programa simula o movimento de três peças do xadrez:
+  - Torre: move-se 5 casas para a direita (usando for)
+  - Bispo: move-se 5 casas na diagonal (cima + direita) (usando while)
+  - Rainha: move-se 8 casas para a esquerda (usando do-while)
+
+  Cada peça utiliza uma estrutura de repetição diferente.
+------------------------------------------------------------
+*/
+
+int main() {
+    // --- Movimento da Torre ---
+    int casasTorre = 5;
+    printf("Movimento da Torre (usando FOR):\n");
+    for (int i = 1; i <= casasTorre; i++) {
+        printf("Direita (%d casa)\n", i);
+    }
+
+    printf("\n"); // Separação visual entre movimentos
+
+    // --- Movimento do Bispo ---
+    int casasBispo = 5;
+    int contadorBispo = 1;
+
+    printf("Movimento do Bispo (usando WHILE):\n");
+    while (contadorBispo <= casasBispo) {
+        printf("Cima Direita (%d casa)\n", contadorBispo);
+        contadorBispo++;
+    }
+
+    printf("\n");
+
+    // --- Movimento da Rainha ---
+    int casasRainha = 8;
+    int contadorRainha = 1;
+
+    printf("Movimento da Rainha (usando DO-WHILE):\n");
+    do {
+        printf("Esquerda (%d casa)\n", contadorRainha);
+        contadorRainha++;
+    } while (contadorRainha <= casasRainha);
+
+    printf("\nSimulação finalizada!\n");
+
+    return 0;
+}
